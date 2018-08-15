@@ -1,0 +1,117 @@
+doctype
+html(lang='ru')
+  head
+    title Тестовое задание Selectel
+    meta(name='description', content='Тестовое задание Selectel')
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='icon', type='image/png', sizes='32x32', href='img/favicon.png')
+  body
+    mixin btn
+      a.btn(href='https://selectel.ru/ ', target='_blank') Заказать
+
+
+    div(style='display:none;')
+      include img/sprite.svg
+
+    div.wrapper
+      div.wrapper__content
+
+        header.page-header
+          div.container.page-header__inner
+            a.logo(href='https://selectel.ru/ ', target='_blank')
+              img(src='img/logo.svg', alt='')
+            a.phone(href='tel:+7(800)555-06-75', target='_blank')
+              svg.phone__icon(width='22', height='22')
+                    use(xlink:href='#phone-icon')
+              span.phone__text +7 (800) 555-06-75
+
+        div.hero-header
+          div.hero-header__slider
+
+            div.hero-header__item.hero-header__item--servers.hero-header__item--active
+              div.container
+                div.hero-header__item-inner
+                  h2.hero-header__title Надежные серверы для проектов любой сложности
+                  p.hero-header__descr
+                    | Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.
+                  +btn
+
+            div.hero-header__item.hero-header__item--storage
+              div.container
+                div.hero-header__item-inner
+                  h2.hero-header__title Надежное, безопасное, удобное хранилище ваших данных
+                  p.hero-header__descr
+                    | Подходит для веб-приложений, хранения архивов, резервного копирования и раздачи статического контента.
+                  +btn
+
+            div.hero-header__item.hero-header__item--cloud
+              div.container
+                div.hero-header__item-inner
+                  h2.hero-header__title Публичное облако на базе технологий VMware с оплатой по потреблению
+                  p.hero-header__descr
+                    | Публичное облако на базе VMware позволяет быстро нарастить мощности вашего дата-центра без капитальных и организационных затрат с оплатой за потребляемые ресурсы.
+                  +btn
+
+            div.hero-header__item.hero-header__item--data-centers
+              div.container
+                div.hero-header__item-inner
+                  h2.hero-header__title Размещение серверного оборудования в дата‑центрах уровня надежности Tier III
+                  p.hero-header__descr
+                    | Размещение серверного оборудования (колокейшн) в современном дата-центре с уровнем надежности Tier III с гарантированным каналом связи с высокой пропускной способностью, бесперебойным питанием и необходимым охлаждением.
+                  +btn
+
+            div.hero-header__dots
+              div.hero-header__dot.hero-header__dot--active
+              div.hero-header__dot
+              div.hero-header__dot
+              div.hero-header__dot
+
+            div.hero-header__arrows
+              div.hero-header__arrow.hero-header__arrow--left
+              div.hero-header__arrow.hero-header__arrow--right
+
+        section.configs
+          div.container
+            h1.configs__title Доступные конфигурации
+            div.configs__table
+              div.configs__header
+                div.column.column--big Процессор
+                div.column.column--middle Жесткий диск
+                div.column.column--middle Память
+                div.column.column--large Цена
+              div.configs__loader
+                img(src='img/loader.svg' alt='')
+
+      footer.page-footer
+          div.container.page-footer__inner
+            a.logo.page-footer__logo(href='https://selectel.ru/ ', target='_blank')
+              img(src='img/logo.svg', alt='')
+            ul.social
+              li.social__item
+                a.social__link(href='https://vk.com/selectel', target='_blank')
+                  svg(width='32', height='18')
+                    use(xlink:href='#vk')
+              li.social__item
+                a.social__link(href='https://www.facebook.com/selectel/', target='_blank')
+                  svg(width='11', height='24')
+                    use(xlink:href='#fb')
+              li.social__item
+                a.social__link(href='https://twitter.com/selectel', target='_blank')
+                  svg(width='28', height='24')
+                    use(xlink:href='#tw')
+              li.social__item
+                a.social__link(href='https://habrahabr.ru/company/selectel/', target='_blank')
+                  svg(width='22', height='24')
+                    use(xlink:href='#habr')
+              li.social__item
+                a.social__link(href='https://habrahabr.ru/company/selectel/', target='_blank')
+                  svg(width='28', height='20')
+                    use(xlink:href='#youtube')
+              li.social__item
+                a.social__link(href='https://www.instagram.com/selectel.ru/', target='_blank')
+                  svg(width='24', height='24')
+                    use(xlink:href='#inst')
+
+    script(src='js/script.min.js')

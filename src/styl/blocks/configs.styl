@@ -1,0 +1,64 @@
+.configs
+  padding-top: 96px
+  padding-bottom 96px
+  font-size $font-small
+  line-height $line-height-smaller
+  color $black
+  @media (max-width: $screen-lg-top)
+    padding-top: 59px
+    padding-bottom: 64px;
+    line-height $line-height-small
+
+  &__header
+    display flex
+    padding 22px 20px 17px 40px
+    font-size $font-smaller
+    color $black
+    opacity 0.8
+    @media (max-width: $screen-lg-top)
+      display none
+
+  &__title
+    font-family $font-family2
+    font-weight $semibold
+    font-size $font-large
+    line-height $line-height-big
+    text-align center
+    color rgba(0,0,0,.8)
+    @media (max-width: $screen-lg-top)
+      margin-bottom 32px
+      font-size $font-big
+      line-height $line-height-medium
+
+  &__table-row
+    display flex
+    flex-wrap wrap
+    align-items center
+    padding: 22px 20px 22px 38px;
+    margin-bottom 24px
+    border 2px solid rgba(0,0,0,.8)
+    border-radius 8px
+    @media (max-width: $screen-lg-top)
+      align-items flex-start
+      padding: 22px 20px 6px 23px;
+      margin-bottom: 16px;
+
+  &__name
+    font-size $font-smaller
+    line-height $line-height-small
+    opacity 0.8
+    @media (min-width: $screen-lg)
+      display none
+
+  &__processor
+    max-width 195px
+
+  &__loader
+    text-align center
+
+  &__loader--hidden
+    display none
+
+  &__error
+    color $red
+    text-align center

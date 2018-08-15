@@ -1,0 +1,22 @@
+body
+  height 100%
+  font-family: $font-family;
+  font-weight $regular
+
+html
+  box-sizing: border-box
+  height: 100%
+
+.wrapper
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__content
+    flex: 1 0 auto;
+
+*, *::before, *::after
+  box-sizing: inherit;
+
+a
+  text-decoration: none;
+

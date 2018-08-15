@@ -1,0 +1,23 @@
+.column
+  &--small
+    width 14.5%
+    @media (min-width: $screen-lg) and (max-width: $screen-xl-top)
+      width 16.5%
+  &--middle
+    width 18%
+  &--big
+    width 23%
+  &--large
+    width 26.5%
+    @media (min-width: $screen-lg) and (max-width: $screen-xl-top)
+      width 24.5%
+
+  &__text
+    padding-right 10px
+  @media (max-width: $screen-lg-top)
+    margin-bottom 16px
+  @media (max-width: $screen-md-top)
+    width 100%
+  @media (min-width: $screen-md) and (max-width: $screen-lg-top)
+    width 50%
+

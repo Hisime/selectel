@@ -1,0 +1,21 @@
+.phone
+  color $white
+  font-size $font-medium
+  line-height $line-height-small
+  animation()
+  &:hover
+    opacity $opacity
+
+  &__icon
+    display inline-block
+    vertical-align middle
+    fill none
+    margin-right 16px
+    @media (max-width: $screen-md-top)
+      margin-right 0
+
+  &__text
+    display inline-block
+    vertical-align middle
+    @media (max-width: $screen-md-top)
+      display none

@@ -1,0 +1,21 @@
+.page-footer
+  flex: 0 0 auto;
+  padding-top 40px
+  padding-bottom 36px
+  background-color $dark
+  @media (max-width: $screen-lg-top)
+    padding-top 33px
+
+  &__inner
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    @media (max-width: $screen-md-top)
+      flex-direction column
+      text-align center
+
+  &__logo
+    @media (max-width: $screen-md-top)
+      margin-bottom 29px
+
+
