@@ -46,7 +46,7 @@ gulp.task('stylus', function () {
 gulp.task('js', function() {
   return gulp.src('src/js/*.js')
     .pipe(plumberNotifier())
-    .pipe(concat('script.min.js'))
+    .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
